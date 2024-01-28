@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-
-
 <h1 class="mt-4 mb-4">Job Application Form </h1>
     <form method="post" >
         {% csrf_token %}
@@ -42,8 +40,8 @@
         {% if messages %}
         <div class="alert alert-success">
             {% for message in messages %}
-            {{ message }}
-            {%endfor %}
+                {{ message }}
+            {% endfor %}
         </div>
         {% endif %}
     </form>
